@@ -73,7 +73,7 @@ def regression(X,y, num_test_samples=100):
 
     y_pred = lr.predict(X_test)
 
-    print(lr.)
+   
     return y_pred,y_test
 
 def classification(X, y, normalize=False, num_test_samples=100):
