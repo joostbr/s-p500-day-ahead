@@ -16,7 +16,7 @@ from sklearn.preprocessing import StandardScaler
     I added some extra variables, the OPH2 and OPL2 those seem to slightly improve the results
     In stead of ratios, this code works with absolute deltas, results were much better using absolute values
     
-    Joost Bruneel
+    Joost 
 '''
 def load_spx_data(filename):
 
@@ -71,9 +71,9 @@ def regression(X,y, num_test_samples=100):
     lr = LinearRegression()
     lr.fit(X_train, list(y_train))
 
+    print("LR",lr.coef_,lr.intercept_)
     y_pred = lr.predict(X_test)
 
-   
     return y_pred,y_test
 
 def classification(X, y, normalize=False, num_test_samples=100):
